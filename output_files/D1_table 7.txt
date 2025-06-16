@@ -1,0 +1,86 @@
+Fichier : table 7.txt
+Création du graphe d'ordonnancement :
+Nombre de sommets : 12
+Nombre d'arcs : 16
+0 -> 4 = 0
+0 -> 6 = 0
+0 -> 7 = 0
+1 -> 9 = 1
+2 -> 11 = 2
+3 -> 9 = 3
+4 -> 1 = 4
+4 -> 5 = 4
+5 -> 8 = 5
+6 -> 3 = 6
+6 -> 10 = 6
+7 -> 2 = 7
+7 -> 8 = 7
+8 -> 9 = 8
+9 -> 11 = 9
+10 -> 1 = 10
+
+Matrice des valeurs
+    0    1    2    3    4    5    6    7    8    9    10   11  
+0   *    *    *    *    0    *    0    0    *    *    *    *   
+1   *    *    *    *    *    *    *    *    *    1    *    *   
+2   *    *    *    *    *    *    *    *    *    *    *    2   
+3   *    *    *    *    *    *    *    *    *    3    *    *   
+4   *    4    *    *    *    4    *    *    *    *    *    *   
+5   *    *    *    *    *    *    *    *    5    *    *    *   
+6   *    *    *    6    *    *    *    *    *    *    6    *   
+7   *    *    7    *    *    *    *    *    7    *    *    *   
+8   *    *    *    *    *    *    *    *    *    8    *    *   
+9   *    *    *    *    *    *    *    *    *    *    *    9   
+10  *    10   *    *    *    *    *    *    *    *    *    *   
+11  *    *    *    *    *    *    *    *    *    *    *    *   
+
+Vérification des arcs du graphe
+Le graphe ne possède pas d'arc à valeur négative
+
+Détection de circuit (Parcours largeur)
+Pas de chemin du sommet 0 au sommet 0
+Pas de chemin du sommet 1 au sommet 1
+Pas de chemin du sommet 2 au sommet 2
+Pas de chemin du sommet 3 au sommet 3
+Pas de chemin du sommet 4 au sommet 4
+Pas de chemin du sommet 5 au sommet 5
+Pas de chemin du sommet 6 au sommet 6
+Pas de chemin du sommet 7 au sommet 7
+Pas de chemin du sommet 8 au sommet 8
+Pas de chemin du sommet 9 au sommet 9
+Pas de chemin du sommet 10 au sommet 10
+Pas de chemin du sommet 11 au sommet 11
+Ce graphe est un graphe d'ordonnancement
+
+Rangs des sommets :
+Le sommet 0 est au rang 0
+Le sommet 1 est au rang 3
+Le sommet 2 est au rang 2
+Le sommet 3 est au rang 2
+Le sommet 4 est au rang 1
+Le sommet 5 est au rang 2
+Le sommet 6 est au rang 1
+Le sommet 7 est au rang 1
+Le sommet 8 est au rang 3
+Le sommet 9 est au rang 4
+Le sommet 10 est au rang 2
+Le sommet 11 est au rang 5
+
+Dates pour chaque sommet
+Sommet  |  Calendrier au plus tôt   |  Calendrier au plus tard  |  Marge totale  
+0       |  0                        |  0                        |  0             
+1       |  16                       |  16                       |  0             
+2       |  7                        |  24                       |  17            
+3       |  6                        |  14                       |  8             
+4       |  0                        |  0                        |  0             
+5       |  4                        |  4                        |  0             
+6       |  0                        |  0                        |  0             
+7       |  0                        |  2                        |  2             
+8       |  9                        |  9                        |  0             
+9       |  17                       |  17                       |  0             
+10      |  6                        |  6                        |  0             
+11      |  26                       |  26                       |  0             
+
+Chemin(s) critique(s)
+0 -> 4 -> 5 -> 8 -> 9 -> 11
+0 -> 6 -> 10 -> 1 -> 9 -> 11

@@ -1,0 +1,77 @@
+Fichier : table 10.txt
+Création du graphe d'ordonnancement :
+Nombre de sommets : 10
+Nombre d'arcs : 16
+0 -> 1 = 0
+1 -> 2 = 2
+1 -> 4 = 2
+1 -> 5 = 2
+2 -> 3 = 3
+2 -> 4 = 3
+2 -> 8 = 3
+3 -> 7 = 5
+4 -> 5 = 6
+4 -> 6 = 6
+4 -> 8 = 6
+5 -> 6 = 2
+5 -> 7 = 2
+6 -> 9 = 1
+7 -> 8 = 6
+8 -> 9 = 1
+
+Matrice des valeurs
+    0    1    2    3    4    5    6    7    8    9   
+0   *    0    *    *    *    *    *    *    *    *   
+1   *    *    2    *    2    2    *    *    *    *   
+2   *    *    *    3    3    *    *    *    3    *   
+3   *    *    *    *    *    *    *    5    *    *   
+4   *    *    *    *    *    6    6    *    6    *   
+5   *    *    *    *    *    *    2    2    *    *   
+6   *    *    *    *    *    *    *    *    *    1   
+7   *    *    *    *    *    *    *    *    6    *   
+8   *    *    *    *    *    *    *    *    *    1   
+9   *    *    *    *    *    *    *    *    *    *   
+
+Vérification des arcs du graphe
+Le graphe ne possède pas d'arc à valeur négative
+
+Détection de circuit (Parcours largeur)
+Pas de chemin du sommet 0 au sommet 0
+Pas de chemin du sommet 1 au sommet 1
+Pas de chemin du sommet 2 au sommet 2
+Pas de chemin du sommet 3 au sommet 3
+Pas de chemin du sommet 4 au sommet 4
+Pas de chemin du sommet 5 au sommet 5
+Pas de chemin du sommet 6 au sommet 6
+Pas de chemin du sommet 7 au sommet 7
+Pas de chemin du sommet 8 au sommet 8
+Pas de chemin du sommet 9 au sommet 9
+Ce graphe est un graphe d'ordonnancement
+
+Rangs des sommets :
+Le sommet 0 est au rang 0
+Le sommet 1 est au rang 1
+Le sommet 2 est au rang 2
+Le sommet 3 est au rang 3
+Le sommet 4 est au rang 3
+Le sommet 5 est au rang 4
+Le sommet 6 est au rang 5
+Le sommet 7 est au rang 5
+Le sommet 8 est au rang 6
+Le sommet 9 est au rang 7
+
+Dates pour chaque sommet
+Sommet  |  Calendrier au plus tôt   |  Calendrier au plus tard  |  Marge totale  
+0       |  0                        |  0                        |  0             
+1       |  0                        |  0                        |  0             
+2       |  2                        |  2                        |  0             
+3       |  5                        |  8                        |  3             
+4       |  5                        |  5                        |  0             
+5       |  11                       |  11                       |  0             
+6       |  13                       |  19                       |  6             
+7       |  13                       |  13                       |  0             
+8       |  19                       |  19                       |  0             
+9       |  20                       |  20                       |  0             
+
+Chemin(s) critique(s)
+0 -> 1 -> 2 -> 4 -> 5 -> 7 -> 8 -> 9

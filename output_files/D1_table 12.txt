@@ -1,0 +1,65 @@
+Fichier : table 12.txt
+Création du graphe d'ordonnancement :
+Nombre de sommets : 14
+Nombre d'arcs : 23
+0 -> 1 = 0
+0 -> 2 = 0
+1 -> 3 = 10
+1 -> 4 = 10
+1 -> 12 = 10
+2 -> 3 = 10
+2 -> 4 = 10
+3 -> 9 = 9
+4 -> 5 = 5
+4 -> 7 = 5
+4 -> 9 = 5
+5 -> 6 = 4
+5 -> 8 = 4
+6 -> 11 = 2
+6 -> 12 = 2
+7 -> 8 = 2
+8 -> 11 = 4
+9 -> 8 = 8
+9 -> 10 = 8
+10 -> 3 = 12
+10 -> 11 = 12
+11 -> 13 = 2
+12 -> 13 = 20
+
+Matrice des valeurs
+    0    1    2    3    4    5    6    7    8    9    10   11   12   13  
+0   *    0    0    *    *    *    *    *    *    *    *    *    *    *   
+1   *    *    *    10   10   *    *    *    *    *    *    *    10   *   
+2   *    *    *    10   10   *    *    *    *    *    *    *    *    *   
+3   *    *    *    *    *    *    *    *    *    9    *    *    *    *   
+4   *    *    *    *    *    5    *    5    *    5    *    *    *    *   
+5   *    *    *    *    *    *    4    *    4    *    *    *    *    *   
+6   *    *    *    *    *    *    *    *    *    *    *    2    2    *   
+7   *    *    *    *    *    *    *    *    2    *    *    *    *    *   
+8   *    *    *    *    *    *    *    *    *    *    *    4    *    *   
+9   *    *    *    *    *    *    *    *    8    *    8    *    *    *   
+10  *    *    *    12   *    *    *    *    *    *    *    12   *    *   
+11  *    *    *    *    *    *    *    *    *    *    *    *    *    2   
+12  *    *    *    *    *    *    *    *    *    *    *    *    *    20  
+13  *    *    *    *    *    *    *    *    *    *    *    *    *    *   
+
+Vérification des arcs du graphe
+Le graphe ne possède pas d'arc à valeur négative
+
+Détection de circuit (Parcours largeur)
+Pas de chemin du sommet 0 au sommet 0
+Pas de chemin du sommet 1 au sommet 1
+Pas de chemin du sommet 2 au sommet 2
+Chemin du sommet 3 au sommet 3 (Circuit : 3 -> 9 -> 10 -> 3)
+Pas de chemin du sommet 4 au sommet 4
+Pas de chemin du sommet 5 au sommet 5
+Pas de chemin du sommet 6 au sommet 6
+Pas de chemin du sommet 7 au sommet 7
+Pas de chemin du sommet 8 au sommet 8
+Chemin du sommet 9 au sommet 9 (Circuit : 9 -> 10 -> 3 -> 9)
+Chemin du sommet 10 au sommet 10 (Circuit : 10 -> 3 -> 9 -> 10)
+Pas de chemin du sommet 11 au sommet 11
+Pas de chemin du sommet 12 au sommet 12
+Pas de chemin du sommet 13 au sommet 13
+Ce graphe n'est pas un graphe d'ordonnancement.
+Ainsi il est impossible d'executer le calcul des rangs, du calendrier au plus tôt, du calendrier au plus tard et des marges.
